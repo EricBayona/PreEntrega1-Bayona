@@ -1,0 +1,200 @@
+:root {
+    --colorBoton: rgb(236, 153, 52);
+    --colorText:#111;
+    --colorHeader: #fff;
+    --colorFooter:#008B69;
+    --colorBorderFooter:#034837;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .contenedorHeader {
+    display: flex;
+    background-color: var(--colorHeader);
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid var(--colorBoton);
+  }
+  
+  .contenedorLogo img {
+    max-width: 15.62rem;
+    filter: invert(1);
+  }
+  
+  .contendorBusqueda input {
+    width: 33rem;
+    height: 2rem;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+  }
+  
+  .fa-search {
+    background-color: var(--colorBoton);
+    padding: 0.6rem 0.9rem;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    cursor: pointer;
+  }
+  
+  .contenedorNav nav ul {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+  }
+  .contenedorNav nav ul li {
+    text-decoration: none;
+    margin-left: 2rem;
+  }
+  
+  .liNav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--colorText);
+  }
+  .liNav select {
+    border: none;
+    font-size: 1.1rem;
+  }
+  
+  .navResponsive {
+    display: none;
+  }
+  .navResponsive .navResponsive:hover {
+    padding-left: 7rem;
+    background-color: #fff;
+    border-radius: 18px 18px 0 0;
+  }
+  
+  .navResponsive:hover .ulResponsive {
+    display: block;
+  }
+  .hamburguesa span{
+    display: block;
+    background-color: var(--colorText);
+    width: 3rem;
+    height: .3rem;
+    margin-bottom: .3rem;
+}
+  .ulResponsive {
+    list-style: none;
+    position: absolute;
+    margin-left: -7rem;
+    margin-top: 1rem;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 0 0 18px 18px;
+    padding: 1rem;
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 1373px) {
+    .contendorBusqueda input {
+      width: 15rem;
+    }
+    .contenedorLogo img {
+      max-width: 11.62rem;
+    }
+    .ulResponsive {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1118px) {
+    .contenedorNav {
+      display: none;
+    }
+    .navResponsive {
+      display: block;
+      padding: 1rem;
+    }
+    .contenedorCategorias {
+      grid-template-columns: repeat(2, auto);
+    }
+    .contenedorFooter {
+      display: block;
+      text-align: center;
+      padding: 1.5rem 0 1.5rem 0;
+    }
+    .mapa {
+      display: block;
+      text-align: center;
+    }
+    .compras {
+      width: 100%;
+    }
+    .compras .contenedor-compras {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 616px) {
+    .contenedorHeader {
+      display: block;
+    }
+    .ulResponsive {
+      margin-left: 0rem;
+      margin-top: 1rem;
+    }
+    .navResponsive:hover {
+      padding-left: 0rem;
+      width: 7.87rem;
+    }
+    .ofertas {
+      grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    }
+    .contenedorCategorias {
+      grid-template-columns: repeat(1, auto);
+    }
+    .formulario-acceso-registro {
+      width: 100%;
+    }
+    .mapaPequeño {
+      display: flex;
+      margin: 0 auto;
+    }
+    .mapaMediano {
+      display: none;
+    }
+    .imagen-contacto img {
+      height: 30vh;
+    }
+    .contenedorInputs input {
+      width: 100%;
+    }
+    .contenedorInputs textarea {
+      border-radius: 18px;
+      width: 100%;
+      height: 5rem;
+    }
+    .botones-categorias {
+      display: none;
+    }
+    .btn-responsive-categorias {
+      display: block;
+    }
+    .btn-responsive-categorias select {
+      background-color: #039569;
+      padding: 1rem;
+    }
+    .compras {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .compras .contenedor-compras {
+      width: 100%;
+      padding: 0;
+    }
+    .compras .contenedor-compras .compra h4 {
+      font-size: 0.9rem;
+    }
+    aside {
+      display: none;
+    }
+  }
