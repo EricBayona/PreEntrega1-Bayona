@@ -1,3 +1,7 @@
+import CartWidget from "./CartWidget ";
+
+
+
 function NavbarResponsive() {
   return (
     <div className="navResponsive">
@@ -19,12 +23,7 @@ function NavbarResponsive() {
         <li className="liNav">
           <a href="pages/contacto.html">Contacto</a>
         </li>
-        <li className="liNav">
-          <a href="pages/compras.html">
-            Mi carrito{" "}
-            <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-          </a>
-        </li>
+        <CartWidget/>
       </ul>
     </div>
   );

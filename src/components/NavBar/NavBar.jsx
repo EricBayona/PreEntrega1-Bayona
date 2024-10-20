@@ -1,3 +1,5 @@
+import CartWidget from "./CartWidget ";
+
 function Navbar() {
     return (
         <div className="contenedorNav">
@@ -7,8 +9,9 @@ function Navbar() {
                     <li className="liNav"><a href="pages/accesoRegistro.html">Acesso/Registo</a></li>
                     <li className="liNav"><a href="pages/categorias.html">Categorias</a></li>
                     <li className="liNav"><a href="pages/contacto.html">Contacto</a></li>
-                    <li className="liNav"><a href="pages/compras.html">Mi carrito <i className="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <CartWidget/>
                 </ul>
+                    
             </nav>
         </div>
     )
